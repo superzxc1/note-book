@@ -125,6 +125,33 @@ systemctl enable docker
 - [Get Docker Engine - Community for CentOS](https://docs.docker.com/install/linux/docker-ce/centos/)
 - [解决 Docker 数据卷挂载的文件权限问题](https://padeoe.com/docker-volume-file-permission-problem/)
 
+### 问题
+
+#### docker 挂载目录没有权限
+有如下几种解决方案：
+- 添加linux规则，把要挂载的目录添加到selinux白名单:
+```bash
+# 更改安全性文本的格式如下
+chcon [-R] [-t type] [-u user] [-r role] 文件或者目录
+ 
+选顷不参数： 
+-R  ：该目录下的所有目录也同时修改； 
+-t  ：后面接安全性本文的类型字段，例如 httpd_sys_content_t ； 
+-u  ：后面接身份识别，例如 system_u； 
+-r  ：后面街觇色，例如 system_r
+```
+执行：
+```bash
+chcon -Rt svirt_sandbox_file_t /home/xuhaixing/docker/tomcat/webapps/
+```
+- 在运行时加 --privileged=true:
+```bash
+docker run -d -p 9091:8080 -v /home/xuhaixing/docker/tomcat/webapps/:/usr/local/tomcat/webapps/ --privileged=true 
+```
+
+##### 参考
+- [Docker -v 对挂载的目录没有权限 Permission denied](https://blog.csdn.net/u012326462/article/details/81038446)
+
 ## Lantern
 
 ### 安装
@@ -168,6 +195,8 @@ curl -x 127.0.0.1:8877 ....
 ### SELinux
 
 - [SELinux 入门](https://zhuanlan.zhihu.com/p/30483108)
+
+
 
 ### RAID
 - [CentOS 7配置软RAID](https://yq.aliyun.com/articles/369791)
