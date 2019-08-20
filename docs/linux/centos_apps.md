@@ -127,6 +127,10 @@ systemctl enable docker
 
 ### 问题
 
+#### 容器重启后无法启动
+1. 检查 `selinux` 状态：`cat /etc/selinux/config` 需要和 docker 配置匹配(一般应该是开启状态 `enforcing`)
+2. 重启服务器 `reboot` 
+
 #### docker 挂载目录没有权限
 有如下几种解决方案：
 - 添加linux规则，把要挂载的目录添加到selinux白名单:
