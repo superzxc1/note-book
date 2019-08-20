@@ -6,6 +6,7 @@ module.exports = () => {
             children: [
                 '',
                 'share_lantern.md',
+                'vscode.md',
             ]
         }
     ]
