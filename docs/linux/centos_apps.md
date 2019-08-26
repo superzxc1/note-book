@@ -180,6 +180,18 @@ BaiduPCS-Go 百度网盘客户端
 #### 下载403问题
 需要充值10块的普通会员
 
+## Samba
+### 作为客户端
+1. 安装：`yum install -y cifs-utils`
+2. 挂载目录：
+```bash
+mount -t cifs //192.168.100.2/C /mnt/smb -o username=zenandidi  #如果共享点带空格，请在空格前加上 “ \ ”
+Password for zenandidi@//192.168.100.2/C:  ******************  #输入密码
+```
+3. 取消挂载：`umount /mnt/smb`
+- **注意：挂载后的目录不能直接删除（会删除源文件），应该用`umount`**
+
+
 ## 其他
 ### 代理设置
 
