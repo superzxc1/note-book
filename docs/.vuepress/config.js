@@ -19,6 +19,7 @@ module.exports = {
     },
     themeConfig: {
         docsDir: 'docs',
+        // sidebarDepth: 3, // 嵌套标题侧边栏提取深度，最大为 2，会提取到 h3
         nav: [
             {text: 'Home', link: '/'},
             {text: 'linxu 笔记', link: '/linux/'},
