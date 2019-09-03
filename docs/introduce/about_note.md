@@ -6,6 +6,22 @@
 > Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。  
 语法简单并且能有简洁美观的效果，非常适合程序员做笔记
 
+### 手风琴
+例：  
+<details open>
+<summary>title</summary>
+this is details
+
+</details>
+写法：
+```html
+<details open>
+<summary>title</summary>
+this is details
+
+</details>
+```
+
 ## [vscode-paste-image](https://github.com/mushanshitiancai/vscode-paste-image)
 vscode 插件，粘贴图片非常方便：
 ![](https://raw.githubusercontent.com/mushanshitiancai/vscode-paste-image/master/res/vscode-paste-image.gif)
