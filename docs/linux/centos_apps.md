@@ -50,12 +50,14 @@ sudo yum -y install  git2u-all
 ## Node.js
 
 ### 安装
+
 ```bash
 curl -sL https://rpm.nodesource.com/setup_12.x | bash -
 yum install -y nodejs
 ```
 ### 参考
 - [centos下安装nodejs的三种种方式](https://blog.csdn.net/bbwangj/article/details/82253785)
+- [使用 nvm 管理不同版本的 node 与 npm](https://www.jianshu.com/p/c21ecb040ce7)
 
 ## python3
 
@@ -209,7 +211,7 @@ curl -x 127.0.0.1:8877 ....
 - [How To Reset Your Forgotten Root Password On CentOS 7 Servers](https://www.liberiangeek.net/2014/09/reset-forgotten-root-password-centos-7-servers/)
 
 ### SELinux
-
+临时开启关闭:`setenforce 1|0`  
 - [SELinux 入门](https://zhuanlan.zhihu.com/p/30483108)
 
 
