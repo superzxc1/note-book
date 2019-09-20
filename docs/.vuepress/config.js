@@ -6,7 +6,7 @@ const java  = require('../java');
 module.exports = {
     title: 'Superzxc 笔记本',
     description: '工作和学习过程中的笔记，汇总成册方便查阅',
-    base: '/note-book/',// 项目名
+    base: '/note/',// 项目名
     locales: {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
