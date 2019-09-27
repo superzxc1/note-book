@@ -7,6 +7,7 @@ module.exports = () => {
                 '',
                 'share_lantern.md',
                 'vscode.md',
+                'tomcat.md'
             ]
         }
     ]
