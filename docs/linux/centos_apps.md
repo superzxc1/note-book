@@ -228,3 +228,10 @@ yum makecache
 ```
 #### 参考
 - [清理yum源](https://www.cnblogs.com/zengkefu/p/5569820.html)
+
+### 软连接
+linux建立文件夹软连接,并强制覆盖:
+```
+ln -sfn /home/var/log/httpd/logs logs
+```
+这将在当前目录下建立logs软连接,指向/home/var/log/httpd/logs,如果存在logs软连接,将强制覆盖  
