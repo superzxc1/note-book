@@ -20,6 +20,7 @@
 - [参考](https://blog.csdn.net/lianshaohua/article/details/88381039)
 ### 问题
 #### `/dev/root does not exist`
+**按上面修改LABEL后，理论上没这个问题了**
 没有找到U盘，按照如下操作：
 1. 找u盘：
 将第二步中按TAB键之后出来的文字修改为：`>vmlinuz initrd=initrd.img linux dd quiet`
