@@ -1,5 +1,5 @@
 # note-book
-采用vscode + vuepress + markdown 的笔记仓库
+采用vscode + vuepress + markdown 的笔记仓库 
 
 ## 使用方式
 1. 安装依赖：`npm install`
