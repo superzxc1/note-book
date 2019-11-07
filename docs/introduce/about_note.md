@@ -29,3 +29,54 @@ vscode 插件，粘贴图片非常方便：
 
 - [Remote 支持](https://github.com/mushanshitiancai/vscode-paste-image/issues/44)
 
+## 持续集成
+本文档采用 `Travis` 持续集成
+
+- `.travis.yml` 配置
+```yml
+language: node_js
+sudo: required
+node_js:
+  - "lts/*"
+cache:
+  directories:
+    - node_modules
+script:
+  - ./deploy.sh
+branch: master
+```
+
+- `deploy.sh` 配置
+```sh
+#!/usr/bin/env sh
+
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
+npm run docs:build
+
+# 进入生成的文件夹
+cd docs/.vuepress/dist
+
+# 如果是发布到自定义域名
+echo 'note.zxc66.site' > CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+
+# 如果发布到 https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:superzxc1/note-book.git master:gh-pages
+
+# 如果使用 travis 持续集成
+git push -f https://${access_token}@github.com/superzxc1/note-book.git master:gh-pages
+
+cd -
+```
+### 参考
+- [VuePress + github pages + Travis CI 教程](https://www.jianshu.com/p/a7435b8bc8bc)
+- [阮一峰 Travis CI 教程](http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html)
