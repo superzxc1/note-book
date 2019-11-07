@@ -30,7 +30,7 @@ vscode 插件，粘贴图片非常方便：
 - [Remote 支持](https://github.com/mushanshitiancai/vscode-paste-image/issues/44)
 
 ## 持续集成
-本文档采用 `Travis` 持续集成
+本文档采用 [Travis](https://www.travis-ci.org/) 持续集成
 
 - `.travis.yml` 配置
 ```yml
