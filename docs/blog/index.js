@@ -5,10 +5,11 @@ module.exports = () => {
             collapsable: false,
             children: [
                 '',
+                'wenzhai.md',
                 'share_lantern.md',
                 'vscode.md',
                 'tomcat.md',
-                'wenzhai.md'
+                'jenkins.md'
             ]
         }
     ]
