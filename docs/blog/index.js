@@ -7,7 +7,8 @@ module.exports = () => {
                 '',
                 'share_lantern.md',
                 'vscode.md',
-                'tomcat.md'
+                'tomcat.md',
+                'wenzhai.md'
             ]
         }
     ]
