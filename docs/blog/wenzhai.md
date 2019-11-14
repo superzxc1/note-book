@@ -15,4 +15,4 @@ crontab 是 Linux 系统的定时任务执行器。这个在线工具可以可�
 
 ### 懒惰、急躁和傲慢（Laziness, Impatience and hubris）
 Perl语言的发明人Larry Wall说，好的程序员有3种美德： 懒惰、急躁和傲慢（Laziness, Impatience and hubris）
-- From [阮一峰的网络日志    ](http://www.ruanyifeng.com/blog/2006/05/laziness_impatience_and_hubris.html)
+- From [阮一峰的网络日志](http://www.ruanyifeng.com/blog/2006/05/laziness_impatience_and_hubris.html)
