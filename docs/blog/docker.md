@@ -24,3 +24,6 @@
    - 然后将证书拷贝到`registry.docker.xxx.com`目录下. 并且将证书重命名为ca.crt或者ca.cer. 注意, 后缀名不重要, 名字一定要是ca.
    - 重启docker即可. `systemctl restart docker.service`
 - [参考](http://www.voidcn.com/article/p-rlsdwrdh-bot.html)
+
+## 学习资料
+- [Docker — 从入门到实践](https://docker_practice.gitee.io/)
