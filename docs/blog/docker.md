@@ -1,5 +1,14 @@
 # docker 学习笔记
 
+## 常用命令
+
+### 容器过滤
+- 根据容器`name`过滤，并返回容器ID：
+```bash
+docker ps -q -f name='awesome*'
+```
+
+
 ## dockerfile
 
 ### 组成部分
