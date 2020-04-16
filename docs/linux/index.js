@@ -6,6 +6,7 @@ module.exports = () => {
             children: [
                 // '',
                 'centos_install.md',
+                'centos_common.md',
                 'home_server.md',
                 'centos_apps.md',
                 'cmd_art.md'
