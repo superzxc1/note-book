@@ -9,6 +9,9 @@
 ## `alias`
 使用 `alias` 来创建常用命令的快捷形式。例如：`alias ll='ls -latr'` 创建了一个新的命令别名 `ll`。
 
+## `mv foo-bar-{baz,quux}.txt`
+变更文件名 将 "foo-bar-baz.txt" 变更为 "foo-bar-quux.txt"
+
 ## `python -m http.server 7777`
 将 web 服务器上当前目录下所有的文件（以及子目录）暴露给你所处网络的所有用户。  
 `python -m SimpleHTTPServer 7777` （使用端口 7777 和 Python 2）  
