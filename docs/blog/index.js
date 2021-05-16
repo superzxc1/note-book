@@ -9,7 +9,8 @@ module.exports = () => {
                 'share_lantern.md',
                 'vscode.md',
                 'tomcat.md',
-                'jenkins.md'
+                'jenkins.md',
+                'python.md'
             ]
         }
     ]
