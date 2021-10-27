@@ -1,5 +1,8 @@
 # 常用
 
+## 同步时间
+- `ntpdate -u ntp1.aliyun.com`
+
 ## 设置网卡
 1. ip addr确认网卡名称
 2. /etc/sysconfig/network-scripts/ifcfg-xxx，这个xxx就是上面网卡名称
