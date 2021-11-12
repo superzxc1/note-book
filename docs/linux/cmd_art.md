@@ -79,6 +79,28 @@ A collection of simplified and community-driven man pages.
 ![](./assets/2019-08-28-22-37-50.png)
 
 
+## awk
+> 如果 grep 允许您搜索行，而 sed 允许您在行中进行替换，那么 awk 旨在让您在行上进行计算
+
+https://earthly.dev/blog/awk-examples/
+
+### 使用示例
+```
+$ echo "one two three" | awk '{ print $1 }'
+one
+$ echo "one two three" | awk '{ print $2 }'
+two
+$ echo "one two three" | awk '{ print $3 }'
+three
+```
+```
+awk '/hello/ { print "This line contains hello", $0}'
+
+awk '$4~/hello/ { print "This field contains hello", $4}'
+
+awk '$4 == "hello" { print "This field is hello:", $4}'
+```
+
 # 参考
 
 - [命令行的艺术](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md)
