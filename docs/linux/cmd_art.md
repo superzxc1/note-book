@@ -100,6 +100,12 @@ awk '$4~/hello/ { print "This field contains hello", $4}'
 
 awk '$4 == "hello" { print "This field is hello:", $4}'
 ```
+- 打印具有人类可读大小的文件：
+```
+$ ls -lh | awk '{ print $5,"\t", $9 }'  
+7.8M     The_AWK_Programming_Language.pdf
+6.2G     bookreviews.t
+```
 
 # 参考
 
